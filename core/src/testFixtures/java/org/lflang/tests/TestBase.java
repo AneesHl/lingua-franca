@@ -128,7 +128,7 @@ public abstract class TestBase extends LfInjectedTestBase {
         "Target does not support single-threaded execution.";
     public static final String NO_FEDERATION_SUPPORT =
         "Target does not support federated execution.";
-    public static final String NO_ENCLAVE_SUPPORT = "Targeet does not support the enclave feature.";
+    public static final String NO_ENCLAVE_SUPPORT = "Target does not support the enclave feature.";
     public static final String NO_DOCKER_SUPPORT = "Target does not support the 'docker' property.";
     public static final String NO_DOCKER_TEST_SUPPORT = "Docker tests are only supported on Linux.";
 
@@ -249,7 +249,7 @@ public abstract class TestBase extends LfInjectedTestBase {
   /**
    * Determine whether the current platform is Windows.
    *
-   * @return true if the current platform is Windwos, false otherwise.
+   * @return true if the current platform is Windows, false otherwise.
    */
   protected static boolean isWindows() {
     String OS = System.getProperty("os.name").toLowerCase();
@@ -257,9 +257,9 @@ public abstract class TestBase extends LfInjectedTestBase {
   }
 
   /**
-   * Determine whether the current platform is MacOS.
+   * Determine whether the current platform is macOS.
    *
-   * @return true if the current platform is MacOS, false otherwise.
+   * @return true if the current platform is macOS, false otherwise.
    */
   protected static boolean isMac() {
     String OS = System.getProperty("os.name").toLowerCase();

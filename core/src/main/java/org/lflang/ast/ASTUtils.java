@@ -325,8 +325,9 @@ public class ASTUtils {
   }
 
   /**
-   * Produce a unique identifier within a reactor based on a given based name. If the name does not
-   * exists, it is returned; if does exist, an index is appended that makes the name unique.
+   * Produce a unique identifier within a reactor based on a given base name. If the name does not
+   * already exist, it is returned; if it does exist, an index is appended that makes the name
+   * unique.
    *
    * @param reactor The reactor to find a unique identifier within.
    * @param name The name to base the returned identifier on.

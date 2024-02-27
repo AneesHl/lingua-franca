@@ -24,7 +24,7 @@
 
 package org.lflang.generator
 
-/** An object that defines the ,, (rangeTo) operator to prepend each line of the rhs multiline string with the lhs prefix.
+/** An object that defines the `..` (rangeTo) operator to prepend each line of the rhs multiline string with the lhs prefix.
  *
  * This is a neat little trick that allows for convenient insertion of multiline strings in string templates
  * while correctly managing the indentation. Consider this multiline string:
@@ -50,12 +50,12 @@ package org.lflang.generator
  *     };""".trimIndent()
  * ```
  * This is because kotlin will insert the plain multiline string `foo` into the higher level string
- * without preserving the indentation of the first line. Using the .. operator as defined below,
+ * without preserving the indentation of the first line. Using the `..` operator as defined below,
  * we can properly indent `foo` while keeping a nice looking syntax that visualizes the expected
  * indentation in the resulting string.
  *
  *
- *  With the ,, operator, `foo` could be inserted into a higher level multiline string like this:
+ *  With the `..` operator, `foo` could be inserted into a higher level multiline string like this:
  *
  * ```
  * with (prependOperator) {
@@ -75,8 +75,8 @@ package org.lflang.generator
  * };
  * ```
  *
- * Note that we define the .. operator inside of an object in order to restrict its visiblity. Since
- * the meaning of .. might not be obvious in other contexts, it needs to be explicilty enabled with
+ * Note that we define the `..` operator inside an object in order to restrict its visibility. Since
+ * the meaning of `..` might not be obvious in other contexts, it needs to be explicitly enabled with
  * `with(prependOperator)`.
  */
 object PrependOperator {

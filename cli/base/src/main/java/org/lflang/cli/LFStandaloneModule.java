@@ -45,7 +45,7 @@ import org.lflang.MessageReporter;
 public class LFStandaloneModule implements Module {
   // Note that xtext's base module classes has broken support
   // for @Provides, which would allow us to bind this field.
-  // So we directly implement Module, instead of extending eg LFRuntimeModule.
+  // So we directly implement Module, instead of extending e.g. LFRuntimeModule.
   private final ReportingBackend helper;
   private final Io io;
 
